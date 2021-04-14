@@ -26,16 +26,16 @@
   <section class="main-with-aside">
 
     <aside>
-      <h4>Tensile Strength Data Logger</h4>
+      <h3>Tensile Strength Data Logger</h3>
       <div>
         <p>Test for new materials through the button below</p>
         <button>perform strength test</button>
       </div>
     </aside>
     <main>
-      <h4>Measured Data</h4>
+      <h3>Measured Data</h3>
       <div class="input-div">
-        <i class="fas fa-search" ></i>
+        <i class="fas fa-search"></i>
         <input placeholder="Search" type="search" />
       </div>
       <table>
@@ -124,11 +124,50 @@
       </table>
     </main>
     <section class="modal-bg">
-<div class="modal-text">
-
-</div>
+      <div class="modal-text">
+        <form>
+          <div class="header">
+            <h4>strength test</h4>
+            <i class="fas fa-times"></i>
+          </div>
+          <fieldset>
+            <legend>material specification</legend>
+            <div>
+              <label>material name</label>
+              <select>
+                <option selected disabled hidden>Enter Material Name</option>
+                <option>Nylon</option>
+                <option>Rubber</option>
+                <option>Plastic</option>
+                <option>Ceramic</option>
+                <option>Glass</option>
+              </select>
+            </div>
+            <div>
+              <label>material type</label>
+              <select>
+                <option selected disabled hidden>Enter Material Type</option>
+                <option>Nylon</option>
+                <option>Rubber</option>
+                <option>Plastic</option>
+                <option>Ceramic</option>
+                <option>Glass</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>material positioning</legend>
+            <section class="button-div">
+              <button>Move Up</button>
+              <button>Move Down</button>
+            </section>
+          </fieldset>
+          <button class="start">Start Test</button>
+        </form>
+      </div>
     </section>
   </section>
+  <script src="functionality.js"></script>
 </body>
 
 </html>

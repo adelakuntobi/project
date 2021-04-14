@@ -1,0 +1,40 @@
+#tensile {
+  background: #F7F8FC;
+  padding: 5rem;
+  .header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    h4 {
+      font-weight: 500;
+    }
+  }
+  .table-div {
+    padding: 2rem;
+    background-color: white;
+    .table-top {
+      margin-bottom: 2rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .empty {
+      display: block;
+      height: 20rem;
+      width: 100%;
+      background: #F9F9F9
+    }
+  }
+  .modal-text{
+    min-width: 400px;
+
+    h3{
+      margin: 5rem 0;
+      text-align: center;
+      color: #333333;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Software</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+</head>
+
+
+<body id="tensile">
+
+  <section class="container-sec">
+    <div class="header-div">
+      <h4>material name - <b>tension test</b></h4>
+      <div>
+        <button class="other-btn">Stop applying force</button>
+      </div>
+    </div>
+    <div class="table-div">
+      <div>
+        <div class="table-top">
+          <p>Stress ( N/m<sup>2</sup> )</p>
+          <p>Strain</p>
+          <p>Tensile Strength ( N/m<sup>2</sup> )</p>
+        </div>
+        <divc class="empty">
+      </div>
+    </div>
+  </section>
+  <section class="modal-bg">
+    <div class="modal-text">
+      <i class="fas fa-times"></i>
+      <h3 class="end-text">Do you wish to end the test?</h3>
+      <div class="button-div">
+        <button class="inverted-btn">Abort Test</button>
+        <button>Resume Test</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="functionality.js"></script>
+</body>
+
+</html>

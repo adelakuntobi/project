@@ -10,19 +10,80 @@ body {
 }
 
 button {
-  padding: 16px 32px;
+  padding: 20px 32px;
   border-radius: 8px;
   border: none;
   outline: none;
   font-size: large;
   text-transform: capitalize;
   cursor: pointer;
+  font-family: 'Mulish', sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.4px;
 }
 
 h4 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+
+i {
+  background: red;
+  font-size: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid !important;
+  place-content: center;
+  color: white;
+  cursor: pointer;
+  margin: auto 0 auto auto;
+}
+
+i:hover {
+  background: #cc0000;
+}
+
+.button-div {
+  display: grid;
+  place-items: center;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-div button, .button-div .other-btn {
+  background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  width: 100%;
+}
+
+.button-div button:hover, .button-div .other-btn:hover {
+  box-shadow: 0 0 7px 4px #7952b38f;
+}
+
+.inverted-btn {
+  background: white !important;
+  color: #37267A !important;
+  border: 1px solid #37267A !important;
+}
+
+.other-btn {
+  background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  width: 100%;
+}
+
+.other-btn:hover {
+  box-shadow: 0 0 7px 4px #7952b38f;
 }
 
 .modal-bg {
@@ -34,11 +95,84 @@ h4 {
   width: 100%;
   display: grid;
   place-items: center;
+  overflow-y: scroll;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.modal-bg::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.modal-bg::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.modal-bg::-webkit-scrollbar-thumb {
+  background: #00000099;
+}
+
+.modal-bg::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }
 
 .modal-bg .modal-text {
+  margin: 3rem 1rem;
   background-color: white;
+  border-radius: 8px;
   padding: 2rem;
+  min-width: 600px;
+  color: #333333;
+}
+
+.modal-bg .modal-text form {
+  border-radius: 8px;
+}
+
+.modal-bg .modal-text form .header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.modal-bg .modal-text form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.75rem;
+}
+
+.modal-bg .modal-text form div label {
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modal-bg .modal-text form div select {
+  padding: 1rem;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-bg .modal-text form div select:focus {
+  outline: none;
+  box-shadow: 0 0 7px 0px grey;
+}
+
+.modal-bg .modal-text form fieldset {
+  padding: 2rem 1.5rem;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.modal-bg .modal-text form fieldset legend {
+  text-transform: capitalize;
 }
 
 .main-with-aside {
@@ -72,6 +206,10 @@ h4 {
   color: #221D65;
   background-color: white;
   margin: 2rem 0 0;
+}
+
+.main-with-aside aside button:hover {
+  box-shadow: 0px 0px 7px 3px #ffffff8c;
 }
 
 .main-with-aside main {
@@ -123,4 +261,59 @@ h4 {
 .main-with-aside main table td {
   height: 55px;
   padding: 0;
+}
+
+.main-with-aside .start {
+  background: #29CC97;
+  margin: auto;
+  width: 200px;
+  color: white;
+  display: block;
+}
+
+#tensile {
+  background: #F7F8FC;
+  padding: 5rem;
+}
+
+#tensile .header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#tensile .header-div h4 {
+  font-weight: 500;
+}
+
+#tensile .table-div {
+  padding: 2rem;
+  background-color: white;
+}
+
+#tensile .table-div .table-top {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tensile .table-div .empty {
+  display: block;
+  height: 20rem;
+  width: 100%;
+  background: #F9F9F9;
+}
+
+#tensile .modal-text {
+  min-width: 400px;
+}
+
+#tensile .modal-text h3 {
+  margin: 5rem 0;
+  text-align: center;
+  color: #333333;
+  font-weight: 600;
 }
