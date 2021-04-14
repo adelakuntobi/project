@@ -23,13 +23,16 @@
 
 
 <body>
+  <div class="loader-div">
+    <div class="loader"></div>
+  </div>
   <section class="main-with-aside">
 
     <aside>
       <h3>Tensile Strength Data Logger</h3>
       <div>
         <p>Test for new materials through the button below</p>
-        <button>perform strength test</button>
+        <button id="start-test">perform strength test</button>
       </div>
     </aside>
     <main>
@@ -123,12 +126,12 @@
         </tbody>
       </table>
     </main>
-    <section class="modal-bg">
+    <section id="modal-index" class="modal-bg">
       <div class="modal-text">
-        <form>
+        <form onsubmit="event.preventDefault()">
           <div class="header">
             <h4>strength test</h4>
-            <i class="fas fa-times"></i>
+            <i id="closeBtn" class="fas fa-times"></i>
           </div>
           <fieldset>
             <legend>material specification</legend>
@@ -162,12 +165,12 @@
               <button>Move Down</button>
             </section>
           </fieldset>
-          <button class="start">Start Test</button>
         </form>
+          <button class="start">Start Test</button>
       </div>
     </section>
   </section>
-  <script src="functionality.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
