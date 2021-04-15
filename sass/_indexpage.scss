@@ -78,4 +78,24 @@
     color: white;
     display: block;
   }
+
+  @media (max-width: 1051px){
+    aside{
+      display: none;
+    }
+    main{
+      padding: 2rem;
+    }
+  }
+  @media (max-width: 800px){
+    main{
+      padding: 2rem 1rem;
+      .input-div{
+        width: 100%;
+      }
+    }
+    .overflow{
+      overflow-x: scroll;
+    }
+  }
 }

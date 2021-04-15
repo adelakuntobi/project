@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
 }
 
 body {
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   color: #252733;
+  max-width: 1400px;
+  margin: auto;
 }
 
 button {

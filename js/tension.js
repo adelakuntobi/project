@@ -29,4 +29,4 @@ function switchPage() {
   }, 80000);
 }
 
-switchPage()
+// switchPage()
