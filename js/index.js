@@ -16,7 +16,7 @@ startTest.addEventListener("click", function () {
   loader.style.display = "flex"
 
   setTimeout(() => {
-    if (modal_side_bar.style.display = "flex") {
+    if (modal_side_bar.style.display === "flex") {
       modal_side_bar.style.display = "none";
     }
     loader.style.display = "none"
