@@ -56,7 +56,8 @@ h4 {
   place-items: center;
   grid-gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
-  button,.other-btn {
+  button,
+  .other-btn {
     background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
     border-radius: 10px;
     color: #FFFFFF;
@@ -68,7 +69,7 @@ h4 {
   }
 }
 
-.inverted-btn{
+.inverted-btn {
   background: white !important;
   color: #37267A !important;
   border: 1px solid #37267A !important;
@@ -85,7 +86,7 @@ h4 {
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -163,6 +164,22 @@ a{
         }
       }
     }
+    @media (max-width: 700px) {
+      min-width: auto;
+      width: 90%;
+      padding: 2rem 1rem;
+      form fieldset {
+        padding: 2rem 1rem;
+      }
+      .button-div {
+        grid-template-columns: 1fr;
+      }
+    }
   }
+}
 
+@media (max-width: 700px) {
+  .overflow {
+    overflow-x: scroll;
+  }
 }

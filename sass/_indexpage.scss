@@ -1,12 +1,17 @@
 .main-with-aside {
   display: flex;
   min-height: 100vh;
-  aside {
+  .modal-side-bar {
+    height: 100vh;
+    width: 300px;
     background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
+    position: fixed;
+  }
+  aside {
     color: white;
     padding: 2rem;
-    width: 350px;
     text-align: center;
+    height: 100%;
     div {
       padding: 2rem;
       background: rgba(159, 162, 180, 0.1);
@@ -23,13 +28,14 @@
       color: #221D65;
       background-color: white;
       margin: 2rem 0 0;
-      &:hover{
+      padding: 20px;
+      &:hover {
         box-shadow: 0px 0px 7px 3px #ffffff8c;
       }
     }
   }
   main {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 2rem 350px;
     color: #252733;
     width: 100%;
     .input-div {
@@ -54,7 +60,9 @@
       width: 100%;
       border-collapse: collapse;
       border-radius: 8px;
-     &,td,th{
+      &,
+      td,
+      th {
         border: 1px solid #DFE0EB;
         padding: 1rem;
       }
@@ -65,37 +73,48 @@
         text-transform: capitalize;
         color: #333333;
       }
-      td{
+      td {
         height: 55px;
         padding: 0;
       }
     }
   }
-  .start{
+  .start {
     background: #29CC97;
-    margin: auto;
+    margin: 0 auto 7rem;
     width: 200px;
     color: white;
     display: block;
   }
-
-  @media (max-width: 1051px){
-    aside{
+  @media (max-width: 1051px) {
+    .modal-side-bar {
       display: none;
+      background: rgba(0, 0, 0, 0.8);
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
     }
-    main{
+    aside {
+      height: 100vh;
+      width: 260px;
+      background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
+      position: fixed;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    main {
       padding: 2rem;
     }
   }
-  @media (max-width: 800px){
-    main{
+  @media (max-width: 800px) {
+    main {
       padding: 2rem 1rem;
-      .input-div{
+      .input-div {
         width: 100%;
       }
-    }
-    .overflow{
-      overflow-x: scroll;
     }
   }
 }

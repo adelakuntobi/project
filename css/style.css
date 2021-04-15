@@ -59,7 +59,8 @@ h4 {
   grid-template-columns: 1fr 1fr;
 }
 
-.button-div button, .button-div .other-btn {
+.button-div button,
+.button-div .other-btn {
   background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
   border-radius: 10px;
   color: #FFFFFF;
@@ -67,7 +68,8 @@ h4 {
   width: 100%;
 }
 
-.button-div button:hover, .button-div .other-btn:hover {
+.button-div button:hover,
+.button-div .other-btn:hover {
   box-shadow: 0 0 7px 4px #7952b38f;
 }
 
@@ -182,17 +184,43 @@ a {
   text-transform: capitalize;
 }
 
+@media (max-width: 700px) {
+  .modal-bg .modal-text {
+    min-width: auto;
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+  .modal-bg .modal-text form fieldset {
+    padding: 2rem 1rem;
+  }
+  .modal-bg .modal-text .button-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .overflow {
+    overflow-x: scroll;
+  }
+}
+
 .main-with-aside {
   display: flex;
   min-height: 100vh;
 }
 
-.main-with-aside aside {
+.main-with-aside .modal-side-bar {
+  height: 100vh;
+  width: 300px;
   background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
+  position: fixed;
+}
+
+.main-with-aside aside {
   color: white;
   padding: 2rem;
-  width: 350px;
   text-align: center;
+  height: 100%;
 }
 
 .main-with-aside aside div {
@@ -213,6 +241,7 @@ a {
   color: #221D65;
   background-color: white;
   margin: 2rem 0 0;
+  padding: 20px;
 }
 
 .main-with-aside aside button:hover {
@@ -220,7 +249,7 @@ a {
 }
 
 .main-with-aside main {
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 2rem 350px;
   color: #252733;
   width: 100%;
 }
@@ -252,7 +281,9 @@ a {
   border-radius: 8px;
 }
 
-.main-with-aside main table, .main-with-aside main table td, .main-with-aside main table th {
+.main-with-aside main table,
+.main-with-aside main table td,
+.main-with-aside main table th {
   border: 1px solid #DFE0EB;
   padding: 1rem;
 }
@@ -272,15 +303,30 @@ a {
 
 .main-with-aside .start {
   background: #29CC97;
-  margin: auto;
+  margin: 0 auto 7rem;
   width: 200px;
   color: white;
   display: block;
 }
 
 @media (max-width: 1051px) {
-  .main-with-aside aside {
+  .main-with-aside .modal-side-bar {
     display: none;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .main-with-aside aside {
+    height: 100vh;
+    width: 260px;
+    background: linear-gradient(90deg, #040F47 0%, #37267A 100%);
+    position: fixed;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
   }
   .main-with-aside main {
     padding: 2rem;
@@ -293,9 +339,6 @@ a {
   }
   .main-with-aside main .input-div {
     width: 100%;
-  }
-  .main-with-aside .overflow {
-    overflow-x: scroll;
   }
 }
 
@@ -321,6 +364,13 @@ a {
   grid-gap: 1.5rem;
 }
 
+@media (max-width: 500px) {
+  #tensile .header-div div {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
 #tensile .header-div div button {
   padding: 20px 40px;
   background: #29CC97;
@@ -336,6 +386,7 @@ a {
   border-radius: 8px;
   background-color: white;
   width: 100%;
+  min-width: 650px;
 }
 
 #tensile table tr {
@@ -377,6 +428,24 @@ a {
   text-align: center;
   color: #333333;
   font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  #tensile {
+    padding: 3.5rem 2rem;
+  }
+  #tensile .header-div {
+    flex-direction: column;
+  }
+  #tensile .header-div h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #tensile {
+    padding: 3.5rem 1rem;
+  }
 }
 
 .loader-div {
