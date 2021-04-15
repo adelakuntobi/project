@@ -186,15 +186,21 @@ a {
 
 @media (max-width: 700px) {
   .modal-bg .modal-text {
-    min-width: auto;
+    min-width: auto !important;
     width: 90%;
     padding: 2rem 1rem;
+  }
+  .modal-bg .modal-text h3 {
+    margin: 3.5rem 0 !important;
   }
   .modal-bg .modal-text form fieldset {
     padding: 2rem 1rem;
   }
   .modal-bg .modal-text .button-div {
     grid-template-columns: 1fr;
+  }
+  .modal-bg .modal-text .button-div button {
+    padding: 14px 32px;
   }
 }
 

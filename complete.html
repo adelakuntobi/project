@@ -28,8 +28,8 @@
     <div class="header-div">
       <h4 style="color: #37267A;">material name - <b>tension test</b></h4>
       <div>
-        <button>Save Data</button>
-        <button>Delete Data</button>
+        <button onclick="openModal()">Save Data</button>
+        <button onclick="openModal()">Delete Data</button>
       </div>
     </div>
     <div class="overflow">
@@ -91,13 +91,13 @@
   </section>
   <section id="modal-tension" class="modal-bg">
     <div class="modal-text">
-      <i id="close-tension" class="fas fa-times"></i>
+      <i onclick="closeModal()" id="close-tension" class="fas fa-times"></i>
       <h3 class="end-text">Do you wish to perform another test ?</h3>
       <div class="button-div">
         <a href="./index.html" style="width: 100%;">
           <button id="abort-test">Yes</button>
         </a>
-        <button id="resume-test" class="inverted-btn">No</button>
+        <button onclick="closeModal()" id="resume-test" class="inverted-btn">No</button>
       </div>
     </div>
   </section>

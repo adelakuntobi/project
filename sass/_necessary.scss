@@ -165,14 +165,20 @@ a {
       }
     }
     @media (max-width: 700px) {
-      min-width: auto;
+      min-width: auto !important;
       width: 90%;
       padding: 2rem 1rem;
+      h3{
+        margin: 3.5rem 0 !important;
+      }
       form fieldset {
         padding: 2rem 1rem;
       }
       .button-div {
         grid-template-columns: 1fr;
+        button{
+          padding: 14px 32px;
+        }
       }
     }
   }
